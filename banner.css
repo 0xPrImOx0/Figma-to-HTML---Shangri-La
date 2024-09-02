@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.banner {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 112vh;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    filter: contrast(80%) brightness(80%) saturate(130%);
+    z-index: -1;
+}
+
+section.banner div {
+    padding: 600px 0 0 230px;
+}
+
+.banner>div button {
+    border: none;
+    background-color: #D7B077;
+    padding: 1.8rem 5.5rem;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+section.banner div p {
+    font-size: 24px;
+    margin-block: 25px;
+    color: white;
+}
+
+section.banner div h2 {
+    position: relative;
+    width: 50%;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.9rem;
+    font-weight: 700;
+    font-size: 56px;
+    color: white;
+    text-shadow: 
+    -1px -1px 0 rgb(255, 215, 0),
+    1px -1px 0 rgb(255, 215, 0),
+    -1px 1px 0 rgb(255, 215, 0),
+    1px 1px 0 rgb(255, 215, 0);
+}
+
+section.banner div h2::before {
+    content: "";
+    position: absolute;
+    top: 53%;
+    left: 0;
+    border: 2px solid white;
+    width: 92%;
+}
+
+.lines {
+    font-size: 43.5px;
+    letter-spacing: 0.1em;
+    padding-top: 0;
+}
