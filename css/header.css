@@ -1,0 +1,51 @@
+@import url(reset.css);
+
+body {
+    font: normal 400 1rem "Poppins", sans-serif;
+}
+
+header {
+    position: relative;
+    background-color: var(--BG-COLOR-2);
+    width: clamp(500px, 100vw, 100%);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header nav .logo {
+    width: clamp(7rem, 16vw, 28rem);
+    height: auto;
+    margin-left: 100px;
+}
+
+header nav ul {
+    float: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 1rem;
+}
+
+header nav ul li a:any-link  {
+    text-decoration: none;
+    font-size: clamp(15px, 1.1vw, 30px);
+    display: block;
+    padding: 1rem 2rem; 
+    color: #D7B077;
+}
+
+header nav ul li a:hover, 
+header nav ul li a:focus {
+    color: #D7B077BB;
+}
+
+header nav ul li:last-child a {
+    margin-right: 100px;
+}

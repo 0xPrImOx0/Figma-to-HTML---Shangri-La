@@ -7,9 +7,11 @@
     <meta name="description" content="Blog of SHANGRI-LA Hotels and Resorts">
     <meta name="author" content="Anonymous">
     <title>SHANGRI - LA | HOTELS AND RESORTS</title>
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="banner.css">
-    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/services.css">
+    <!-- <link rel="stylesheet" href="products.css"> -->
 </head>
 <body>
     <header>
@@ -27,8 +29,11 @@
     <main>
         <section class="banner">
             <div>
-                <h2>EXPERIENCE LUXURY <span class="lines"><br>SHANGRI-LA HOTELS & RESORTS</span></h2>
-                <p>Where Necessities Meets Luxury.</p>
+                <h2>
+                    <span class='line-top'>EXPERIENCE LUXURY</span> 
+                    <span class="line-bottom"><br>SHANGRI-LA HOTELS & RESORTS</span>
+                </h2>
+                <p class="tagline">Where Necessities Meets Luxury.</p>
                 <button type="button">Contact Us</button>
             </div>
         </section>
@@ -36,18 +41,22 @@
         <section class="services">
             <div class="spa">
                 <div class="image-container">
-                    <img src="img/spa-icon.svg" alt="Spa Icon" class="circle">
+                    <img src="img/spa-icon.png" alt="Spa Icon" width="90px" height="90px">
                 </div>
                 <h3>Heavenly Therapy Spa</h3>
             </div>
 
             <div class="coffee">
-                <img src="" alt="Coffee Icon" class="circle">
+                <div class="image-container">
+                    <img src="img/coffee-icon.png" alt="Coffee Icon" width="90px" height="90px">
+                </div>
                 <h3>The Coffee Connection</h3>
             </div>
 
             <div class="restaurant">
-                <img src="" alt="Restaurant Icon" class="circle">
+                <div class="image-container">
+                    <img src="img/restaurant-icon.png" alt="Restaurant Icon" width="90px" height="90px">
+                </div>
                 <h3>Five Michelin Restaurant</h3>
             </div>
         </section>

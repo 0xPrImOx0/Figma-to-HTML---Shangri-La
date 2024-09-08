@@ -1,0 +1,83 @@
+.banner {
+    position: relative;
+    top: 0;
+    display: block;
+    height: 870px;
+    width: clamp(500px, 100vw, 100%);
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    filter: contrast(80%) brightness(80%) saturate(130%);
+    z-index: -1;
+}
+
+.banner div {
+    position: absolute;
+    top: clamp(400px, 22vw, 450px);
+    left: clamp(50px, 12vw, 300px);
+
+}
+
+.banner div h2 {
+    display: block;
+    position: relative;
+    color: var(--BG-COLOR-1);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    text-shadow:
+        -1px -1px 0 var(--BANNER-LINE-SHADOW),
+        1px -1px 0 var(--BANNER-LINE-SHADOW),
+        -1px 1px 0 var(--BANNER-LINE-SHADOW),
+        1px 1px 0 var(--BANNER-LINE-SHADOW);
+}
+
+.banner div h2 .line-top {
+    position: relative;
+    font-size: clamp(45px, 3vw, 60px);
+    letter-spacing: clamp(5px, 0.63vw, 15px);
+}
+
+.banner div h2 .line-top::after {
+    content: "";
+    position: absolute;
+    top: 1%;
+    left: 0;
+    width: 98%;
+    height: 100%;
+    border-bottom: 2px solid var(--BG-COLOR-1);
+}
+
+.banner div h2 .line-bottom {
+    font-size: clamp(34px, 2.56vw, 55px);
+}
+
+.banner div p.tagline {
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(16px, 1.25vw, 30px);
+    font-weight: 400;
+    color: var(--BG-COLOR-1);
+    padding: 1rem 0 1.5rem 0;
+}
+
+.banner div button {
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(15px, 1.05vw, 25px);
+    font-weight: 500;
+    padding-block: clamp(1rem, 1.7vw, 3rem);
+    padding-inline: clamp(3rem, 5vw, 8rem);
+    border: none;
+    color: var(--TEXT-COLOR-1);
+    background-color: var(--ICON-BUTTON-BG);
+    cursor: pointer;
+}
