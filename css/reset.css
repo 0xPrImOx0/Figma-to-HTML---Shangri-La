@@ -12,6 +12,14 @@ img {
     display: block;
 }
 
+input, textarea {
+    font-size: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     /*COLOR*/
     --BG-COLOR-1: #FFFFFF;
@@ -20,7 +28,14 @@ img {
     --BG-COLOR-2: #171717;
     --SERVICES-ICON-BG: #0A0707;
     --FORM-BG: #D9D9D9;
-    --FORM-INPUT-BG: linear-gradient(to right, #FCC2A2 11%, #D7B077 68%);
+    --FORM-INPUT-BG: linear-gradient(to bottom, #FCC2A2 11%, #D7B077 68%);
     --BANNER-LINE-SHADOW: #FFD700;
 
+    /* SHADOWS */
+    --TEXT-SHADOW: 
+        -1px -1px 2px var(--ICON-BUTTON-BG),
+        1px -1px 2px var(--ICON-BUTTON-BG),
+        -1px 1px 2px var(--ICON-BUTTON-BG),
+        1px 1px 2px var(--ICON-BUTTON-BG);
+    --BOX-SHADOWS: 0 0 0 3px var(--ICON-BUTTON-BG)
 }

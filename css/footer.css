@@ -1,0 +1,103 @@
+.footer {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: clamp(500px, 100vw, 100%);
+    height: 550px;
+    background-color: var(--BG-COLOR-2);
+}
+
+.footer .footer-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: clamp(1300px, calc(100vw - 460px), 1700px);
+    height: 280px;
+}
+
+.footer .footer-flex .book-footer {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+    width: clamp(300px, 20.84vw, 500px);
+    height: clamp(200px, 12.5vw, 300px);
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.footer .footer-flex .book-footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--FORM-INPUT-BG);
+    filter: brightness(60%) contrast(90%);
+    border: 2px solid var(--BG-COLOR-1);
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.footer .footer-flex .book-footer h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: clamp(35px, 2.1vw, 45px);
+    color: var(--BG-COLOR-1);
+    text-shadow: var(--TEXT-SHADOW);
+    text-align: center;
+}
+
+.footer .footer-flex .book-footer h2>.nowrap {
+    white-space: nowrap;
+}
+
+.footer .footer-flex .book-footer button {
+    border: none;
+    background-color: var(--ICON-BUTTON-BG);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: clamp(15px, 1.05vw, 25px);
+    padding-block: clamp(18px, 1.05vw, 23px);
+    padding-inline: clamp(40px, 2.4vw, 52px);
+    border-radius: 20px;
+}
+
+.footer .footer-flex .footer-sub {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer .footer-flex .footer-sub h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: clamp(20px, 1.31vw, 30px);
+    color: var(--ICON-BUTTON-BG);
+    padding-bottom: 27px;
+}
+
+.footer .footer-flex .footer-sub p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: clamp(19px, 1.15vw, 25px);
+    color: var(--BG-COLOR-1);
+    padding-bottom: 27px;
+}
+
+.footer .copyright {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: clamp(15px, 1.04168vw, 25px);
+    color: var(--ICON-BUTTON-BG);
+    position: relative;
+    top: 15%;
+}

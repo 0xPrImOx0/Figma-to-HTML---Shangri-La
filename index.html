@@ -11,14 +11,17 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/services.css">
-    <!-- <link rel="stylesheet" href="products.css"> -->
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/footer.css">
+
 </head>
 <body>
     <header>
         <nav>
             <img src="img/logo.png" alt="SHANGRI-LA Logo" class="logo" width="250" height="200">
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -27,7 +30,7 @@
     </header>
 
     <main>
-        <section class="banner">
+        <section class="banner" id="about">
             <div>
                 <h2>
                     <span class='line-top'>EXPERIENCE LUXURY</span> 
@@ -38,7 +41,7 @@
             </div>
         </section>
 
-        <section class="services">
+        <section class="services" id="services">
             <div class="spa">
                 <div class="image-container">
                     <img src="img/spa-icon.png" alt="Spa Icon" width="90px" height="90px">
@@ -65,114 +68,120 @@
             <h2>Recommended Room Types</h2>
 
             <div class="cards">
-                <div class="terrace">
-                    <img src="" alt="Terrace Image">
-                    <h3>The Skylight Terrace</h3>
-                    <button type="button">Book Now</button>
+                <div class="card-container">
+                    <img src="img/skylight-terrace.png" alt="Terrace Image" width="390px" height="220px" class="card-image">
+                    <h3 class="products-title">The Skylight Terrace</h3>
+                    <button type="button" class="buttons">Book Now</button>
                 </div>
 
-                <div class="villa">
-                    <img src="" alt="Villa Image">
-                    <h3>Paradise Villa</h3>
-                    <button type="button">Book Now</button>
+                <div class="card-container">
+                    <img src="img/paradise-villa.png" alt="Villa Image" width="390px" height="220px" class="card-image">
+                    <h3 class="products-title">Paradise Villa</h3>
+                    <button type="button" class="buttons" class="buttons">Book Now</button>
                 </div>
 
-                <div class="presidential">
-                    <img src="" alt="Presidential Image">
-                    <h3>Presidential Sanctuary</h3>
-                    <button type="button">Book Now</button>
+                <div class="card-container">
+                    <img src="img/presidential-sanctuary.png" alt="Presidential Image" width="390px" height="220px" class="card-image">
+                    <h3 class="products-title">Presidential Sanctuary</h3>
+                    <button type="button" class="buttons">Book Now</button>
                 </div>
 
-                <div class="royal">
-                    <img src="" alt="Royal Image">
-                    <h3>The Royal Prestige</h3>
-                    <button type="button">Book Now</button>
+                <div class="card-container">
+                    <img src="img/royal-prestige.png" alt="Royal Image" width="390px" height="220px" class="card-image">
+                    <h3 class="products-title">The Royal Prestige</h3>
+                    <button type="button" class="buttons">Book Now</button>
                 </div>
             </div>
         </section>
 
-        <section class="form">
-            <div class="details">
-                <h2>Let's discuss on something <span class="gold">cool</span> together</h2>
-                
-                <div class="location">
-                    <img src="" alt="Pin Icon">
-                    <p>Cagayan de Oro City, Philippines</p>
+        <section class="form" id="contact">
+            <div class="form-container">
+                <div class="details">
+                    <h2>
+                        <span class='nowrap'>Let's discuss</span> <span class='nowrap'>on something <span class="gold black-text-shadow">cool</span></span> <span class='nowrap'>together</span>
+                    </h2>
+                    
+                    <div class="contact-info">
+                        <img src="img/location-pin-icon.svg" alt="Pin Location Icon" />
+                        <a href="https://maps.app.goo.gl/Xz6GEGdQo7A2aANc8" target="_blank">Cagayan de Oro City, Philippines</a>
+                    </div>
+
+                    <div class="contact-info">
+                        <img src="img/email-icon.svg" alt="Email Icon" />
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=daug.rey@ustp.edu.ph" target="_blank">daug.rey@ustp.edu.ph</a>
+                    </div>
+
+                    <div class="contact-info">
+                        <img src="img/phone-icon.svg" alt="Phone Icon" />
+                        <a href="tel:+639539110594" target="_blank">(088) 2168591</a>
+                    </div>
+
+                    <div class="socmed-icons">
+                        <img src="img/facebook-icon.svg" alt="Facebook Icon" />
+                        <img src="img/instagram-icon.svg" alt="Instagram Icon" />
+                        <img src="img/x-icon.svg" alt="X Icon" />
+                    </div>
                 </div>
 
-                <div class="email">
-                    <img src="" alt="Email Icon">
-                    <p>daug.rey@ustp.edu.ph</p>
+                <div class="contact-form">
+                    <h2>Feel Free To Ask</h2>
+
+                    <div class="contact-form-container">
+                        <img src="img/user-icon.svg" alt="User Icon">
+                        <input type="text" name="name" id="name" placeholder="Enter Name" autocomplete="off" />
+                    </div>
+
+                    <div class="contact-form-container">
+                        <img src="img/email-icon.svg" alt="Email Icon">
+                        <input type="email" name="email" id="email" placeholder="Enter Email" autocomplete="off" />
+                    </div>
+
+                    <div class="contact-form-container">
+                        <input class="subj" maxlength="50" placeholder="Enter Subject" />
+                        <hr>
+                        <img src="img/message-icon.svg" alt="Message Icon" />
+                        <textarea id="message" name="message" rows="3.5" cols="30" placeholder="Your message here"></textarea>
+                    </div>
+
+                    <button type="submit">SUBMIT</button>
                 </div>
-
-                <div class="number">
-                    <img src="" alt="Phone Icon">
-                    <p>(088) 2168591</p>
-                </div>
-
-                <div class="socmed-icons">
-                    <img src="" alt="Facebook Icon">
-                    <img src="" alt="Instagram Icon">
-                    <img src="" alt="X Icon">
-                </div>
-            </div>
-
-            <div class="contact-form">
-                <h2>Feel Free To Ask</h2>
-
-                <div class="res-name">
-                    <img src="" alt="Person Icon">
-                    <input type="text" name="name" id="name">Enter Name
-                </div>
-
-                <div class="res-email">
-                    <img src="" alt="Email Icon">
-                    <input type="email" name="email" id="email">Enter Email
-                </div>
-
-                <div class="res-message">
-                    <p>Enter Subject</p>
-
-                    <img src="" alt="Message Icon">
-                    <input type="text" name="message" id="message">Enter Message Here
-                </div>
-
-                <button type="submit">SUBMIT</button>
             </div>
         </section>  
     </main>
 
-    <footer>
-        <div class="book-footer">
-            <h2>Start Your Travel Journey!</h2>
-            <button type="button">Book Now</button>
-        </div>
+    <footer class="footer">
+        <div class="footer-flex">
+            <div class="book-footer">
+                <h2><span class="nowrap">Start Your</span> <span class="nowrap">Travel Journey!</span></h2>
+                <button type="button">Book Now</button>
+            </div>
 
-        <div class="about-footer">
-            <h4>ABOUT</h4>
-            <p>Shangri-La info</p>
-        </div>
+            <div class="footer-sub">
+                <h4 class="footer-title">ABOUT</h4>
+                <p>Shangri-La info</p>
+            </div>
 
-        <div class="services-footer">
-            <h4>SERVICES</h4>
-            <p>Heavenly Therapy Spa</p>
-            <p>The Coffee Connection</p>
-            <p>Five Michelin Restaurant</p>
-        </div>
+            <div class="footer-sub">
+                <h4 class="footer-title">SERVICES</h4>
+                <p>Heavenly Therapy Spa</p>
+                <p>The Coffee Connection</p>
+                <p>Five Michelin Restaurant</p>
+            </div>
 
-        <div class="product-footer">
-            <h4>PRODUCT</h4>
-            <p>The Skylight Terrace</p>
-            <p>Paradise Villa</p>
-            <p>Presidential Sanctuary</p>
-            <p>The Royal Prestige</p>
-        </div>
+            <div class="footer-sub">
+                <h4 class="footer-title">PRODUCT</h4>
+                <p>The Skylight Terrace</p>
+                <p>Paradise Villa</p>
+                <p>Presidential Sanctuary</p>
+                <p>The Royal Prestige</p>
+            </div>
 
-        <div class="contact-footer">
-            <h4>CONTACT US</h4>
-            <p>Facebook</p>
-            <p>Instagram</p>
-            <p>Twitter</p>
+            <div class="footer-sub">
+                <h4 class="footer-title">CONTACT US</h4>
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>Twitter</p>
+            </div>
         </div>
 
         <p class="copyright">

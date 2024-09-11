@@ -1,0 +1,66 @@
+.products {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--BG-COLOR-2);
+    width: clamp(500px, 100vw, 100%);
+    height: 800px;
+}
+
+.products h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: clamp(40px, 2.5vw, 56px);
+    color: var(--BG-COLOR-1);
+    text-shadow: var(--TEXT-SHADOW);
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.products .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    width: clamp(500px, calc(100vw - 160px), 1800px);
+    height: 450px;
+    gap: 20px;
+}
+
+.products .cards .card-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-shrink: 1;
+    width: clamp(150px, 22.14vw, 525px);
+    height: 450px;
+    background-color: var(--BG-COLOR-1);
+    box-shadow: var(--BOX-SHADOWS);
+}
+
+.products .cards .card-container .card-image {
+    width: clamp(100px, 20.313vw, 420px);
+    height: auto;
+}
+
+.products .cards .card-container .products-title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: clamp(20px, 1.5vw, 35px);
+    text-align: center;
+    color: var(--TEXT-COLOR-1);
+    text-shadow: var(--TEXT-SHADOW);
+}
+
+.products .cards .card-container .buttons {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    padding-block: 1rem;
+    padding-inline: 3rem;
+    border: none;
+    background-color: var(--ICON-BUTTON-BG);
+    cursor: pointer;
+}

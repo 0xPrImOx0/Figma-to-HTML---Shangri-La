@@ -49,15 +49,11 @@
 
 .services :is(.spa h3, .coffee h3, .restaurant h3) {
     font-family: "Open Sans", sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     font-size: clamp(20px, 1.5vw, 35px);
     letter-spacing: 0.1rem;
     color: var(--BG-COLOR-1);
-    text-shadow: 
-        -1px -1px 3px var(--ICON-BUTTON-BG),
-        1px -1px 3px var(--ICON-BUTTON-BG),
-        -1px 1px 3px var(--ICON-BUTTON-BG),
-        1px 1px 3px var(--ICON-BUTTON-BG);
+    text-shadow: var(--TEXT-SHADOW);
 }
 
 .services .spa .image-container,
