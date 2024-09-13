@@ -76,3 +76,77 @@
     height: 90px;
     padding: 10px;
 }
+
+@media (max-width: 1050px) {
+    .services {
+        height: 500px;;
+    }
+
+    .services .spa .image-container,
+    .services .coffee .image-container,
+    .services .restaurant .image-container {
+        width: 100px;
+        height: 100px;
+    }
+
+    .services .spa .image-container img,
+    .services .coffee .image-container img,
+    .services .restaurant .image-container img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .services :is(.spa h3, .coffee h3, .restaurant h3) {
+        font-size: clamp(17.5px, 1.9vw, 25px);
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 5px;
+        background-color: var(--BG-COLOR-1);
+        width: clamp(550px, 100vw, 100%);
+        height: 1000px;
+        gap: 5px;
+    }
+
+
+    .services .restaurant {
+        grid-column: 1 / 3;
+    }
+
+    .services .spa .image-container,
+    .services .coffee .image-container,
+    .services .restaurant .image-container {
+        width: 120px;
+        height: 120px;
+    }
+
+    .services .spa .image-container img,
+    .services .coffee .image-container img,
+    .services .restaurant .image-container img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .services :is(.spa h3, .coffee h3, .restaurant h3) {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .services {
+        display: flex;
+        flex-flow: column wrap;
+        height: 1820px;
+        row-gap: 10px;
+    }
+
+    .services :is(.spa, .coffee, .restaurant) {
+        height: 600px;
+    }
+}

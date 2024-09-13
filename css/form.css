@@ -87,7 +87,22 @@
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
-    width: 50%  ;
+    width: 50%;
+}
+
+.form .form-container .details .socmed-icons button {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    top: -20px;
+}
+
+.form .form-container .details .socmed-icons button img {
+    cursor: pointer;
+}
+
+.form .form-container .details .socmed-icons button img:hover {
+    filter: hue-rotate(180deg);
 }
 
 
@@ -232,4 +247,218 @@
     padding: 1.25rem 3.125rem;
     border: none;
     border-radius: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 1600px) {
+    .form .form-container {
+        justify-content: space-between;
+        padding-block: 50px;
+    }
+
+    .details {
+        margin-left: 50px;
+
+    }
+
+    .form .form-container .contact-form {
+        width: 500px;
+        margin-right: 50px;
+    }
+
+    .form .form-container .contact-form .contact-form-container {
+        width: 415px;
+
+    }
+}
+
+
+@media (max-width: 1224px) {
+    .form .form-container {
+        width: 1000px;;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        padding: 0  ;
+    }
+
+    .details {
+        margin-left: 50px;
+
+    }
+
+    .form .form-container .contact-form {
+        width: 450px;
+        position: relative;
+        top: 0;
+        left: -15px;
+    }
+
+    .form .form-container .contact-form .contact-form-container {
+        width: 400px;
+    }
+
+    #name, #email, .subj, #message {
+        font-size: 25px;
+    }
+
+    .form .form-container .contact-form .contact-form-container #message {
+        top: -20px;
+        width: 285px;
+        margin-right: 10px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .form {
+        height: 950px;
+    }
+
+    .form .form-container {
+        justify-content: flex-end;
+        width: 750px;
+        height: 650px;
+    }
+
+    .form .form-container .details {
+        margin-left: 25px;
+        height: 600px;
+        width: 300px;
+    }
+
+    .form .form-container .details h2 {
+        font-size: 30px;
+    }
+
+    .form .form-container .details .contact-info img {
+        margin-right: 10px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .form .form-container .details .contact-info a {
+        font-size: 15px;
+    }
+
+    .form .form-container .details .socmed-icons button {
+        top: 0;
+    }
+
+    .form .form-container .details .socmed-icons {
+        width: 75%;
+        justify-content: flex-start;
+    }
+    
+    .form .form-container .details .socmed-icons button {
+        top: -20px;
+        margin-right: 20px;
+    }
+    
+    .form .form-container .details .socmed-icons button img {
+        cursor: pointer;
+        width: 35px;
+        height: 40px;
+    }
+
+    .form .form-container .details .socmed-icons button:nth-of-type(2) img {
+        width: 45px;
+    }
+    
+    .form .form-container .details .socmed-icons button img:hover {
+        filter: hue-rotate(180deg);
+    }
+
+    .form .form-container .contact-form {
+        height: 600px;
+        width: 400px;
+        left: 0;
+        margin-right: 25px;
+    }
+
+    .form .form-container .contact-form h2 {
+        font-size: 30px;
+    }
+
+    .form .form-container .contact-form .contact-form-container {
+        justify-content: flex-start;
+        width: 350px;
+        height: 65px;
+    }
+
+    .form .form-container .contact-form .contact-form-container:last-of-type {
+        height: 200px;
+    }
+
+    .form .form-container .contact-form .contact-form-container #message {
+        width: 250px;
+        top: 0;
+    }
+
+    .form .form-container .contact-form .contact-form-container input {
+        margin: 0;
+    }
+
+    .form .form-container .contact-form .contact-form-container img {
+        width: 35px;
+        height: 35px;
+        margin-left: 20px;
+    }
+
+    #name, #email, .subj, #message {
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .form .form-container .contact-form button {
+        padding: 1rem 3rem;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .form {
+        height: 1550px;
+        width: clamp(550px, 100vw, 100%);
+    }
+    .form .form-container {
+        height: 1350px;
+        width: 500px;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+    }
+
+    .form .form-container .details {
+        width: calc(100% - 50px);
+        margin-left: 50px;
+        align-self: flex-start;
+    }
+
+    .form .form-container .details h2 {
+        font-size: 35px;
+    }
+
+    .form .form-container .details .contact-info img {
+        width: 45px;
+        height: 45px
+    }
+
+    .form .form-container .details .contact-info a {
+        font-size: 20px;
+    }
+
+    
+    .form .form-container .details .socmed-icons button {
+        top: 0
+    }
+    .form .form-container .details .socmed-icons button img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .form .form-container .contact-form {
+        margin-right: 0;
+    }
 }
