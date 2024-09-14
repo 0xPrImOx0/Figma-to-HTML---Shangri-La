@@ -158,7 +158,7 @@
 
     .footer .footer-flex {
         flex-direction: column;
-        width: 750px;
+        width: auto;
         height: 1000px;
         margin-top: 0;
     }
@@ -188,6 +188,7 @@
         height: auto;
         row-gap: 100px;
         margin-block: 100px;
+        width: clamp(550px, 100vw, 100%);
     }
     .footer .footer-flex .double-row {
         display: flex;

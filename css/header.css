@@ -24,7 +24,6 @@ header nav .logo {
 
 header nav .hamburger {
     position: absolute;
-    left: 1700px;
     width: 50px;
     height: 50px;
     display: none;
@@ -32,6 +31,10 @@ header nav .hamburger {
 
 header nav ul {
     float: right;
+}
+
+header nav ul .back-icon {
+    display: none;
 }
 
 header nav ul li {
@@ -88,36 +91,48 @@ header nav ul li:last-child a {
         padding-block: 10px;
     }
 
-    /* header nav .hamburger {
-        display: inline-block;
-        left: 700px;
-        width: 30px;
-        height: 30px;
+    header nav .hamburger {
+        position: absolute;
+        display: flex;
+        width: 40px;
+        height: 40px;
         cursor: pointer;
-    } */
-/* 
+        top: 50px;
+        left: clamp(480px, 89vw, 900px);
+        z-index: 100;
+    }
+
     header nav ul {
         position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: var(--BG-COLOR-2);
-        z-index: -111111;
         top: 0;
+        width: 35%;
+        left: clamp(360px, 65vw, 500px);
+        height: 100%;
+        background-color: var(--BG-COLOR-2);
+        z-index: -11;   
         display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        overflow: hidden;
+        flex-flow: column wrap;
+        text-align: center;
+        display: none;
+    }
+
+    header nav ul .back-icon {
+        display: block; 
+        width: 45px;
+        height: 45px;
+        margin-left: clamp(125px, 65%, 70%);
+        margin-block: clamp(30px, 6.5vw, 50px);
     }
 
     header nav ul li a:any-link {
-        font-size: clamp(25px, 2vw, 45px);
+        font-size: clamp(20px, 3vw, 30px);
         text-align: center;
         margin-bottom: 3rem
     }
 
     header nav ul li:last-of-type a {
         margin-right: 0;
-    } */
+    }
 }
 
 @media (max-width: 600px) {
@@ -130,7 +145,7 @@ header nav ul li:last-child a {
         margin-left: 25px;
     }
 
-    header nav ul {
-        display: none;
+    header nav .hamburger {
+        top: 35px;
     }
 }

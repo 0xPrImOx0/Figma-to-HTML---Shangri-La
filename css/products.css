@@ -68,10 +68,6 @@
     .products .cards {
         width: 1050px;
     }
-
-    .products .cards .card-container {
-        /* height: 100px; */
-    }
 }
 
 @media (max-width: 1050px) {
