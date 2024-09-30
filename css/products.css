@@ -142,3 +142,43 @@
         height: 425px;
     }
 }
+
+@media (max-width: 500px) {
+    .products {
+        width: 100%;
+        height: 470vw;
+    }
+
+    .products h2 {
+        font-size: 5vw;
+        margin-bottom: 0;
+    }
+
+    .products .cards {
+        height: 400vw;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .products .cards .card-container {
+        width: 70vw;
+        height: 80vw;
+        justify-content: space-between;
+    }
+
+    .products .cards .card-container .card-image {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .products .cards .card-container .products-title {
+        font-size: 5vw;
+    }
+
+    .products .cards .card-container .buttons {
+        font-size: 5vw;
+        padding: 3vw 6vw;
+        margin-bottom: 5%;
+    }
+}

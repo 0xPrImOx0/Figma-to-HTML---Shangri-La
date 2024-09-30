@@ -149,3 +149,47 @@ header nav ul li:last-child a {
         top: 35px;
     }
 }
+
+@media (max-width: 500px) {
+    header{
+        width: 100%;
+        }
+
+    header nav {
+        width: 100%;
+        height: 80%;
+    }
+
+    header nav .logo {
+        width: 25%;
+        height: 50%;
+    }
+
+    header nav .hamburger {
+        left: calc(100% - 13%);
+        width: 7%;
+        height: 7%;
+        top: auto;
+    }
+
+    header nav ul {
+        position: fixed;
+        top: 0;
+        width: 50vw;
+        left: calc(100% - 50%);
+    }
+
+    header nav ul .back-icon {
+        display: block; 
+        width: 10vw;
+        height: 10vw;
+        margin-left: calc(100% - 15vw);
+        margin-block: 7vw;
+        outline: none;
+    }
+
+    header nav ul li a:any-link {
+        font-size: 4vw;
+        margin-bottom: 1rem;
+    }
+}

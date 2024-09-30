@@ -196,3 +196,41 @@
         row-gap: 50px;
     }
 }
+
+@media (max-width: 500px) {
+    .footer {
+        width: 100%;
+    }
+
+    .footer .footer-flex {
+        width: 100%;
+    }
+
+    .footer .footer-flex .book-footer {
+        width: 80vw;
+        height: 50vw;
+    }
+
+    .footer .footer-flex .book-footer h2 {
+        font-size: 9vw;
+    }
+
+    .footer .footer-flex .book-footer button {
+        padding: 4vw 8vw;
+        font-size: 5vw;
+    }
+
+    .footer .footer-flex .double-row .footer-sub .footer-title {
+        font-size: 4vw;
+    }
+
+    .footer .footer-flex .double-row .footer-sub p {
+        font-size: 3vw;
+    }
+
+    .footer .copyright {
+        font-size: 2.5vw;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}

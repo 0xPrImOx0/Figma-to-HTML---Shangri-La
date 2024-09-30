@@ -150,3 +150,40 @@
         height: 600px;
     }
 }
+
+@media (max-width: 500px) {
+    .services {
+        width: 100%;
+        height: 92.1vh;
+        row-gap: 0;
+    }
+
+    .services :is(.spa, .coffee, .restaurant) {
+        height: 30vh;
+        margin-bottom: auto;
+    }
+
+    .services .restaurant {
+        margin-bottom: 0;
+    }
+
+    .services .spa .image-container,
+    .services .coffee .image-container,
+    .services .restaurant .image-container {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .services .spa .image-container img,
+    .services .coffee .image-container img,
+    .services .restaurant .image-container img {
+        width: 17vw;
+        height: 17vw;
+        z-index: 111111111;
+    }
+
+    .services :is(.spa h3, .coffee h3, .restaurant h3) {
+        font-size: 4vw;
+        text-align: center;
+    }
+}
